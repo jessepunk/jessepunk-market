@@ -4,7 +4,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jessepunk Marketplace</title>
   <style>
-    body { margin: 0; padding: 0; font-family: 'Inter', Arial, sans-serif; background: #000; color: #f5c518; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      color: #f5c518;
+      background: #000;
+      background-image: radial-gradient(circle at 20% 20%, rgba(255,215,0,0.05), transparent 60%),
+                        radial-gradient(circle at 80% 10%, rgba(255,215,0,0.04), transparent 70%),
+                        radial-gradient(circle at 50% 90%, rgba(255,215,0,0.05), transparent 80%),
+                        linear-gradient(180deg, #000 0%, #050505 40%, #000 100%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
     header {
       padding: 80px 20px;
       text-align: center;
@@ -103,7 +115,28 @@ tr:last-child td { border-bottom: none; }
     <p class="hero-sub">The next-generation NFT marketplace on Base</p>
     <a class="primary-button" href="https://opensea.io/collection/jessepunk-legends/overview">Mint Now</a>
     <div id="particle-bg"></div>
-</header>  <div class="section">
+</header>  <div class="section" id="intro">
+    <h2>The Ticker is $JESSE</h2>
+    <div class="vault-card">
+      <p>
+        Jessepunk is more than an NFT marketplace — it is a growing digital economy built on Base. 
+        $JESSE is the native token powering governance, rewards, identity, and community-owned infrastructure.
+      </p>
+      <p>
+        Just like BILLIONS.Network positions $BILL as the currency of the AI-powered human economy,
+        Jessepunk positions $JESSE as the cultural and economic engine for collectors, artists, traders, 
+        and builders across the Base ecosystem.
+      </p>
+      <p>
+        Jessepunk is built on three core principles:
+      </p>
+      <ul>
+        <li><strong>Transparency</strong> — fully on-chain, open vault, visible allocations</li>
+        <li><strong>Community</strong> — NFTs unlock ownership, airdrops, and influence</li>
+        <li><strong>Value Flywheel</strong> — market volume → rewards → growth → token utility</li>
+      </ul>
+    </div>
+  </div>  <div class="section">
     <h2>Project Overview</h2>
     <p>Jessepunk is a decentralized NFT marketplace built for the Base ecosystem. Designed with transparency, security, and community ownership at its core, Jessepunk introduces a powerful token model, community airdrops, and long-term roadmap supporting builders and traders alike.</p>
   </div>  <div class="section">
@@ -308,4 +341,4 @@ document.addEventListener('mousemove', (e) => {
 
   </script>
 </body>
-                                                                                                                                                                                                                                                          </html>
+</html>
