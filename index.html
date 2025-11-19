@@ -1,0 +1,311 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jessepunk Marketplace</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: 'Inter', Arial, sans-serif; background: #000; color: #f5c518; }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #000, #111, #000);
+      border-bottom: 1px solid #222;
+      box-shadow: 0 0 60px rgba(245,197,24,0.08);
+    }
+    h1 { font-size: 48px; margin-bottom: 10px; letter-spacing: 1px; }
+    p { line-height: 1.7; }.section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 32px;
+  border-left: 6px solid #f5c518;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #0a0a0a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(245,197,24,0.06);
+}
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #222;
+}
+th { background: #111; }
+tr:last-child td { border-bottom: none; }
+
+.vault-card {
+  background: #0b0b0b;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 40px rgba(245,197,24,0.07);
+  border: 1px solid #333;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #f5c518;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.primary-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.hero-sub { font-size: 18px; color: #c5a848; margin-top: 10px; }
+
+.footer { text-align: center; padding: 30px; border-top: 1px solid #222; margin-top: 40px; font-size: 14px; color: #777; }
+
+/* Animated glow */
+.glow {
+  animation: glowPulse 2.8s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 10px rgba(245,197,24,0.2); }
+  50% { text-shadow: 0 0 25px rgba(245,197,24,0.4); }
+  100% { text-shadow: 0 0 10px rgba(245,197,24,0.2); }
+}
+
+/* Section separators */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  margin: 60px 0;
+}
+
+#particle-bg {position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; background:radial-gradient(circle,#f5c51833 1px, transparent 1px); background-size:4px 4px; opacity:0.15; animation: shimmer 30s linear infinite;} @keyframes shimmer {0%{background-position:0 0;}100%{background-position:2000px 2000px;}} </style>
+
+</head>
+<body>
+  <header>
+    <nav style="display:flex; justify-content:center; gap:40px; padding:20px 0; font-size:18px;">
+      <a href="#tokenomics" style="color:#f5c518; text-decoration:none;">Tokenomics</a>
+      <a href="#vault" style="color:#f5c518; text-decoration:none;">Vault</a>
+      <a href="#airdrop" style="color:#f5c518; text-decoration:none;">Airdrop</a>
+      <a href="#roadmap" style="color:#f5c518; text-decoration:none;">Roadmap</a>
+    </nav>
+    <h1 class="glow">Jessepunk Marketplace</h1>
+    <p class="hero-sub">The next-generation NFT marketplace on Base</p>
+    <a class="primary-button" href="https://opensea.io/collection/jessepunk-legends/overview">Mint Now</a>
+    <div id="particle-bg"></div>
+</header>  <div class="section">
+    <h2>Project Overview</h2>
+    <p>Jessepunk is a decentralized NFT marketplace built for the Base ecosystem. Designed with transparency, security, and community ownership at its core, Jessepunk introduces a powerful token model, community airdrops, and long-term roadmap supporting builders and traders alike.</p>
+  </div>  <div class="section">
+    <h2>Tokenomics</h2>
+    <p>Total Supply: <strong>10,000,000 JESSE</strong></p>
+    <table>
+      <tr><th>Category</th><th>Tokens</th><th>Percentage</th></tr>
+      <tr><td>Legendary NFT Holders</td><td>4,500,000</td><td>45%</td></tr>
+      <tr><td>Public Free Mint Airdrop</td><td>1,500,000</td><td>15%</td></tr>
+      <tr><td>Liquidity Pool</td><td>1,700,000</td><td>17%</td></tr>
+      <tr><td>Marketplace Rewards</td><td>1,100,000</td><td>11%</td></tr>
+      <tr><td><strong>Vault / Treasury</strong></td><td><strong>1,000,000</strong></td><td><strong>10%</strong></td></tr>
+      <tr><td>Ecosystem Growth</td><td>400,000</td><td>4%</td></tr>
+      <tr><td>Team & Development</td><td>300,000</td><td>3%</td></tr>
+    </table>
+  </div>  <div class="section">
+    <h2>Vault / Treasury</h2>
+    <div class="vault-card">
+      <h3>Jessepunk Vault</h3>
+      <p>10% of the total supply is secured in a multisig-protected vault. Funds are used for long-term project sustainability, ecosystem expansion, grants, bounties, and partnerships.</p>
+      <p><strong>Vault Address:</strong> <a href="#">0xVAULT_ADDRESS_HERE</a></p>
+      <p><strong>JESSE Balance:</strong> 1,000,000</p>
+      <p><strong>Base Balance:</strong> 0.0 (for gas)</p><h4>Vesting</h4>
+  <p>Cliff: 1 Month</p>
+  <p>Linear unlock: 12 Months</p>
+
+  <h4>Recent Transactions</h4>
+  <ul>
+    <li>No transactions yet.</li>
+  </ul>
+</div>
+
+  </div>  <div class="section">
+    <h2>Airdrop</h2>
+    <p>Once all NFTs are minted out, airdrop distribution begins within 3 to 7 days. Legendary holders receive the largest allocations, while public mint participants receive their share from the 1.5M pool.</p>
+  </div>  <div class="section">
+    <h2>Project Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+JESSEPUNK ECOSYSTEM FLOW[ User ] ↓ [ Mint NFT on OpenSea ] ↓ [ NFT Ownership Recorded ] ↓ [ Eligible For Airdrop ] ↓ [ JESSE Token Distribution ] ↓ [ Marketplace Launch (MVP) ] ↓ [ Trading, Rewards, Ecosystem Growth ]
+
+VAULT & TREASURY FLOW
+
+[ Vault (10% Supply) ] ↓ Multisig + Timelock [ Vesting Schedule ] ↓ [ Operations • Partnerships • Grants ] </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Tokenomics Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+TOKEN DISTRIBUTION MAP (10,000,000 JESSE)┌──────────────────────┐
+             │   TOTAL SUPPLY       │
+             │    10,000,000        │
+             └──────────┬───────────┘
+                        │
+    ┌──────────────┬────┴───────────────┬──────────────┐
+    │              │                    │              │
+
+45% Legendary    15% Public           17% Liquidity   11% Rewards Holders          Airdrop              Pool             Engine │              │                    │              │ └──────────────┴───────────────┬────┴──────────────┘ │ 10% Vault │ 4% Growth │ 3% Team </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Ecosystem Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+THE JESSEPUNK ECOSYSTEM[ OpenSea Mint ] ↓ [ NFT Ownership ] ↓ [ Airdrop Eligibility ] ↓ [ Marketplace (MVP) ] ↓        ↓        ↓ Minting   Listings   Trading ↓        ↓        ↓ [ Rewards Engine ] → [ JESSE Token ] ↓ [ Ecosystem Growth ] ↓ [ Partnerships & Expansion ] </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Airdrop Flow Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+JESSEPUNK AIRDROP PIPELINE[ NFT Minted ] ↓ [ Snapshot of Holders ] ↓ [ Eligibility Check ] ↓               ↓ Legendary        Public Mint Holders         (Free Mint) ↓               ↓ [ 4.5M Pool ]   [ 1.5M Pool ] ↓ [ Compute Allocation ] ↓ [ Distribution (3–7 Days Post Mint-Out) ] ↓ [ Tokens Claimable / Auto-Distributed ] </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Marketplace Architecture Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+JESSEPUNK MARKETPLACE MVP ARCHITECTURE┌───────────────────────┐
+             │    User Interface     │
+             │  (HTML + CSS + JS)    │
+             └───────────┬───────────┘
+                         │
+           ┌─────────────┴─────────────┐
+           │ Frontend Logic (Client)   │
+           │  WalletConnect + Base     │
+           └─────────────┬─────────────┘
+                         │
+                 [ On-Chain Actions ]
+                         │
+     ┌───────────────────┼───────────────────┐
+     │                   │                   │
+
+[ NFT Contract ]   [ Marketplace Contract ]   [ Token Contract ] (ERC721)             (Buy/Sell/List)         (ERC20 JESSE) │                   │                   │ └───────────────────┴───────────────────┘ │ [ Base Network ] │ [ BaseScan / RPC ] </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Vault Security Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+JESSEPUNK VAULT SECURITY STACK┌──────────────────────┐
+           │    Gnosis Safe       │
+           │   (3 of 5 Multisig)  │
+           └──────────┬───────────┘
+                      │
+           ┌──────────┴───────────┐
+           │    Timelock Layer    │
+           │   (72h Delay)        │
+           └──────────┬───────────┘
+                      │
+           ┌──────────┴───────────┐
+           │   Vesting Contract   │
+           │ (12 Month Unlock)    │
+           └──────────┬───────────┘
+                      │
+           ┌──────────┴───────────┐
+           │  On-Chain Dashboard  │
+           │ (Transparency Layer) │
+           └──────────────────────┘
+  </pre>
+</div>
+
+  </div>  <div class="section">
+    <h2>Utility Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+JESSEPUNK TOKEN UTILITY MAP[ JESSE Token ] │ ┌─────┼───────────────┬────────────────┬────────────────┐ │     │               │                │                │ Trading Fees   Marketplace Rewards   Airdrop Utility   Governance (Future) │     │               │                │ │     └───────────────┴─────┬──────────┘ │                           │ └────────► Ecosystem Expansion & Integrations ◄────────┘
+
+</pre>
+</div>
+
+  </div>  <div class="section">
+    <h2>Mini-App Interaction Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+FARCASTER MINI-APP INTEGRATION FLOWUser on Base App ↓ Farcaster Mini-App (Frame) ↓ [ Connect Wallet ] ↓ Action Options: • View Marketplace • Check Airdrop Eligibility • Claim Rewards ↓ [ API / On-Chain Calls ] ↓ Smart Contracts (NFT, Market, Token) ↓ Base Network Execution ↓ Mini-App Updates User Interface </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Economy Cycle Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+JESSEPUNK ECONOMIC CYCLE[ Mint NFTs ] ↓ [ Users Join Ecosystem ] ↓ [ Airdrop Distributed ] ↓ [ Users Trade on Marketplace ] ↓ [ Volume Generates Rewards ] ↓ [ JESSE Token Circulates ] ↓ [ Marketplace Grows ] ↓ [ Value Returns to Users ] ↓ LOOP </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Revenue Flow Diagram</h2>
+    <div class="vault-card">
+      <pre style="white-space: pre-wrap; color:#f5c518; font-size:14px;">
+MARKETPLACE REVENUE FLOWUser Trade ↓ Marketplace Fee (Small %) ↓ ┌───────────────┬──────────────────┬─────────────────────┐ │  Staking Pool  │   Vault Reserve  │   Rewards Engine    │ └───────┬────────┴──────────┬───────┴──────────┬────────┘ │                   │                  │ Token Buyback      Development & Ops     User Incentives │                   │                  │ └──────────────► Ecosystem Growth ◄───┘ </pre> </div>
+
+  </div>  <div class="section">
+    <h2>Roadmap</h2>
+    <ul>
+      <li><strong>Phase 1:</strong> Website, tokenomics, vault setup, NFT launch</li>
+      <li><strong>Phase 2:</strong> Airdrop distribution (3–7 days post mint-out)</li>
+      <li><strong>Phase 3:</strong> MVP release of the Jessepunk Marketplace</li>
+      <li><strong>Phase 4:</strong> Advanced trading features, rewards engine, partner integrations</li>
+    </ul>
+  </div>  <div class="section">
+    <h2>FAQ</h2>
+    <h3>What is the Vault?</h3>
+    <p>The Vault stores 10% of the token supply for long-term utility. It is protected by a multisig and timelock for maximum transparency.</p><h3>How does the airdrop work?</h3>
+<p>Once all NFTs are minted, the airdrop will be rolled out within 3–7 days. Legendary holders get the largest share.</p>
+
+<h3>What chain is this on?</h3>
+<p>Jessepunk is launching exclusively on <strong>Base</strong>.</p>
+
+  </div>  <div class="footer">
+    © 2025 Jessepunk Marketplace — Built for Base
+  </div>
+  <script>
+    // Mobile Navigation Toggle
+    const nav = document.querySelector('nav');
+    const mobileToggle = document.createElement('div');
+    mobileToggle.innerHTML = '☰';
+    mobileToggle.style.cssText = 'position:fixed; top:20px; left:20px; font-size:30px; color:#f5c518; cursor:pointer; z-index:9999; display:none;';
+    document.body.appendChild(mobileToggle);function adjustNavForMobile() {
+  if (window.innerWidth < 700) {
+    nav.style.display = 'none';
+    mobileToggle.style.display = 'block';
+  } else {
+    nav.style.display = 'flex';
+    mobileToggle.style.display = 'none';
+  }
+}
+adjustNavForMobile();
+window.onresize = adjustNavForMobile;
+
+mobileToggle.onclick = () => {
+  if (nav.style.display === 'none') nav.style.display = 'flex';
+  else nav.style.display = 'none';
+};
+
+// Floating Mint Button
+const floatBtn = document.createElement('a');
+floatBtn.href = 'https://opensea.io/collection/jessepunk-legends/overview';
+floatBtn.innerText = 'Mint';
+floatBtn.style.cssText = 'position:fixed; bottom:30px; right:30px; background:#f5c518; color:#000; padding:15px 25px; border-radius:50px; font-weight:bold; text-decoration:none; box-shadow:0 0 20px rgba(245,197,24,0.4); z-index:9999;';
+document.body.appendChild(floatBtn);
+
+// Parallax Hero Effect
+document.addEventListener('mousemove', (e) => {
+  const moveX = (e.clientX - window.innerWidth / 2) * 0.002;
+  const moveY = (e.clientY - window.innerHeight / 2) * 0.002;
+  document.querySelector('header').style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
+
+  </script>
+</body>
+                                                                                                                                                                                                                                                          </html>
